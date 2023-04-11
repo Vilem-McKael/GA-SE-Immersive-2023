@@ -2,14 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import ToDoList from './components/ToDoList/ToDoList'
 
-// Add the todos array
-const todos = [
-  'Have Fun with BTY',
-  'Learn React with BTY',
-  'Learn the MERN-Stack BTY'
-];
 
-function App() {
+export default function App() {
+
+  const [todos, setTodos] = useState([
+    "Have Fun",
+    "Learn React",
+    "Learn the MERN-Stack"
+  ]);
 
   const [showTodos, setShowTodos] = useState(true);
 
@@ -21,5 +21,3 @@ function App() {
     </div>
   )
 }
-
-export default App
